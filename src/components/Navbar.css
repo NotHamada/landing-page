@@ -1,0 +1,24 @@
+:root {
+  --bg-turquoise: #4cbfa6;
+  --bg-soft-lilac: #f6ebf4;
+  --bg-purple: #482673;
+  --bg-orchid: #ed0b70;
+  --bg-digi-denim: #301008;
+}
+
+.bg-turquoise {
+  background-color: var(--bg-turquoise);
+}
+
+.bg-soft-lilac {
+  background-color: var(--bg-soft-lilac);
+}
+
+.navbar-purple .navbar-brand {
+  color: var(--bg-purple) !important;
+}
+
+.navbar-purple .navbar-toggler {
+  color: var(--bg-purple) !important;
+  border-color: var(--bg-purple) !important;
+}
