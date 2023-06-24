@@ -2,16 +2,18 @@ import "bootstrap";
 import React from "react";
 import "./Navbar.css";
 import ReactDOM from "react-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg navbar-purple bg-soft-lilac">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <h2 class="fw-bold">Hello, I'm Matheus Hamada</h2>
+    <nav className="navbar navbar-expand-lg navbar-purple bg-soft-lilac">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">
+          <h2 className="fw-bold">Hello!</h2>
         </a>
         <button
-          class="navbar-toggler"
+        className="btn"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbar"
@@ -19,22 +21,23 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">
+          {/* <span className="navbar-toggler-icon"></span> */}
+          <FontAwesomeIcon icon={faBars} />        
+          </button>
+        <div className="collapse navbar-collapse" id="navbar">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="#">
                 About me
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Experiences
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Contacts
               </a>
             </li>
